@@ -28,7 +28,6 @@ app.use(express.urlencoded({ extended: false }))
 
 
 // call 
-
 app.use("/account", accountRoutes)
 
 app.use("/vendor", productRoutes)
