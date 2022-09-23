@@ -9,27 +9,28 @@ const productSchema = new mongoose.Schema(
         turf_district: { type: String },
         turf_catogery:
         {
-            turf_cricket: { type: String },
-            turf_football: { type: String },
-            turf_badminton: { type: String },
-            turf_yoga: { type: String },
+            turf_cricket: { type: Boolean },
+            turf_football: { type: Boolean },
+            turf_badminton: { type: Boolean },
+            turf_yoga: { type: Boolean },
         }
         ,
         turf_type:
         {
-            turf_sevens: { type: String },
-            turf_sixes: { type: String },
+            turf_sevens: { type: Boolean },
+            turf_sixes: { type: Boolean },
         }
         ,
         turf_isAvailable: { type: String },
+        turf_isAvailale: { type: Boolean },
         amenities:
         {
-            turf_washroom: { type: String },
-            turf_water: { type: String },
-            turf_dressing: { type: String },
-            turf_parcking: { type: String },
-            turf_gallery: { type: String },
-            turf_cafeteria: { type: String },
+            turf_washroom: { type: Boolean },
+            turf_water: { type: Boolean },
+            turf_dressing: { type: Boolean },
+            turf_parcking: { type: Boolean },
+            turf_gallery: { type: Boolean },
+            turf_cafeteria: { type: Boolean },
         }
         ,
         turf_images:

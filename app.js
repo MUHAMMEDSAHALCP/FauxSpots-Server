@@ -7,6 +7,7 @@ const cors = require("cors")
 const morgan = require("morgan")
 const colors = require('colors')
 const bodyParser = require("body-parser");
+const fetchRoutes = require("./routes/fetchRoutes")
 
 // db connect
 
