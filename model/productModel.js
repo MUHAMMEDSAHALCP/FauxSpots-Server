@@ -22,7 +22,6 @@ const productSchema = new mongoose.Schema(
         }
         ,
         turf_isAvailable: { type: String },
-        turf_isAvailale: { type: Boolean },
         amenities:
         {
             turf_washroom: { type: Boolean },
