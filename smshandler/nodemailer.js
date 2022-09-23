@@ -9,7 +9,7 @@ module.exports = {
         const otpCode = Math.floor(1000 + Math.random() * 9000)
         const transporter = nodemailer.createTransport({
 
-            service: "hotmail",
+            service: "gmail",
 
             auth: {
                 user: process.env.NODEMAILER_USER,
@@ -36,7 +36,7 @@ module.exports = {
         const clindOtpCode = {
             from: process.env.NODEMAILER_USER, // sender address
             to: email, // list of receivers
-            subject: 'FauxSpot Email Varification',
+            subject: 'BookTurf Email Varification',
             template: "email",
             context: {
                 otp: otpCode
