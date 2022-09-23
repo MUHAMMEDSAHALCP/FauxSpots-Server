@@ -92,6 +92,7 @@ module.exports = {
 
             const { user_mail, user_password } = req.body
 
+            console.log(user_mail, user_password);
 
             const findUser = await User.findOne({ user_mail: user_mail })
 
